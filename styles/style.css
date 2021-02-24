@@ -3,6 +3,15 @@
    Author: Saddam Arbaa
 ========================================== */
 
+:root {
+  --primary: #666;
+  --white: #fff;
+  --red: #f00;
+  --footer-color: #929eaa;
+  --footer-background-color: #eaecee70;
+  --margin-top: 2rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +19,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*====== Header  ======*/
+/*======  Start The Header Section  ======*/
 
 .page__header {
   display: flex;
@@ -18,14 +27,15 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 350px;
-  color: white;
+  color: var(--white);
   background: url("../assets/banner.jpeg") no-repeat center center/cover;
+  position: relative;
 }
 
 .profile__image {
   width: 150px;
   height: 150px;
-  background: white;
+  background: var(--white);
   border-radius: 50%;
   background: url("../assets/profile2.jpg") no-repeat center center/cover;
 }
@@ -35,20 +45,38 @@ body {
   font-weight: bold;
 }
 
-.profile__subetext {
-  margin-top: 2rem;
+.profile__subtext {
+  margin-top: 8px;
 }
 
-/*====== Main Section  ======*/
+.page__header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* header > * {z-index: 100;} */
+
+.profile__image,
+.profile__name,
+.profile__subtext {
+  z-index: 100;
+}
+
+/*======  Start The Main Section  ======*/
 
 .page__main {
   display: flex;
   justify-content: center;
-  height: 100px;
-  margin-top: 2rem;
+  margin-top: var(--margin-top);
 
   border: 1px solid blue;
   background: coral;
+  height: 100px;
 }
 
 .page__main .page__main__container {
@@ -57,28 +85,30 @@ body {
   min-width: 600px;
   padding-left: 1rem;
   padding-right: 1rem;
+
   border: 1px solid red;
   background-color: chartreuse;
 }
 
-/*====== Footer Section  ======*/
+/*======  Start the Footer Section  ======*/
 
 .page__footer {
-  margin-top: 2.5rem;
+  margin-top: var(--margin-top);
   min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eaecee70;
-  color: #929eaa;
+  background-color: var(--footer-background-color);
+  color: var(--footer-color);
   font-size: 1rem;
 }
 
-.page__footer span {
-  color: red;
-  font-size: 1.3rem;
+.page__footer .fa-heart {
+  color: var(--red);
+  font-size: 1.2rem;
 }
 
 .page__footer a {
   text-decoration: none;
+  color: var(--footer-color);
 }
