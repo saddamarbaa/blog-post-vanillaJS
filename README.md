@@ -6,3 +6,6 @@ https://docs.google.com/document/d/1lZvacY90Yo19QcnJxRJyy1AAZkTi0Vi5qXHTtptqAiU/
 
 ### My Blog SUser Flow
 https://app.diagrams.net/#G1DYvf-0FWMjC2nDzFbvAgbJ03Zg8DLfRZ
+
+### Blog App: Wireframe
+https://app.diagrams.net/#G1Wo8rd6DVJUyCwp7aC6kLpvMkBM3Mgh8l
