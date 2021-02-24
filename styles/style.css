@@ -62,3 +62,23 @@ body {
 }
 
 /*====== Footer Section  ======*/
+
+.page__footer {
+  margin-top: 2.5rem;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaecee70;
+  color: #929eaa;
+  font-size: 1rem;
+}
+
+.page__footer span {
+  color: red;
+  font-size: 1.3rem;
+}
+
+.page__footer a {
+  text-decoration: none;
+}
