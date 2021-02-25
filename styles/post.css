@@ -1,0 +1,27 @@
+.main__container--post {
+  display: flex;
+  border: 1px solid #eaecee;
+  border-radius: 8px;
+  min-height: 200px;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.main__container--post__image {
+  flex-basis: 40%;
+  background: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")
+    no-repeat center center/cover;
+}
+
+.main__container--post__content {
+  flex-basis: 60%;
+}
+
+.post--date {
+}
+
+.post--title {
+}
+
+.post--text {
+}
