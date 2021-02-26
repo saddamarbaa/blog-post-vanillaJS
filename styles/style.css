@@ -13,6 +13,7 @@
   --footer-background-color: #eaecee70;
   --drak33Grey: #333;
   --margin-top: 2rem;
+  --margin-bottom: 2rem;
 }
 
 * {
@@ -101,6 +102,8 @@ body {
   margin-top: 1em;
   overflow: hidden;
   transition: all 0.25s ease;
+  cursor: pointer;
+  margin-bottom: var(--margin-bottom);
 }
 
 .page__main .main__container--post:hover {
@@ -164,7 +167,6 @@ body {
 /*======  Start the Footer Section  ======*/
 
 .page__footer {
-  margin-top: var(--margin-top);
   min-height: 100px;
   display: flex;
   justify-content: center;
@@ -182,4 +184,23 @@ body {
 .page__footer a {
   text-decoration: none;
   color: var(--footer-color);
+}
+
+.add-post {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 24px;
+  width: 50px;
+}
+
+.page.fas.fa-plus-circle {
+  color: #004186;
+  transition: all 0.25s ease;
+}
+
+.add-post:hover .fas.fa-plus-circle {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  color: #002349;
+  border-radius: 50%;
 }
