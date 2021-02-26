@@ -9,8 +9,6 @@
   --white: #fff;
   --red: #f00;
   --primary: #666;
-  --footer-color: #929eaa;
-  --footer-background-color: #eaecee70;
   --drak33Grey: #333;
   --margin-top: 2rem;
   --margin-bottom: 2rem;
@@ -166,13 +164,15 @@ body {
 
 /*======  Start the Footer Section  ======*/
 
+/*======  Footer Section  ======*/
+
 .page__footer {
   min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--footer-background-color);
-  color: var(--footer-color);
+  background-color: var(--drak33Grey);
+  color: var(--white);
   font-size: 1rem;
 }
 
@@ -183,24 +183,33 @@ body {
 
 .page__footer a {
   text-decoration: none;
-  color: var(--footer-color);
+  color: var(--white);
 }
 
-.add-post {
+.page__footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #004186;
+  color: #929eaa;
+}
+
+/*====== new post Icon  ======*/
+
+.page .add-post {
   position: fixed;
   bottom: 30px;
   right: 30px;
   font-size: 24px;
   width: 50px;
+  border-radius: 50%;
 }
 
-.page.fas.fa-plus-circle {
-  color: #004186;
+.page .fas.fa-plus-circle {
+  color: #3e3e3e;
   transition: all 0.25s ease;
 }
 
-.add-post:hover .fas.fa-plus-circle {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  color: #002349;
-  border-radius: 50%;
+.page .fas.fa-plus-circle:hover {
+  color: #004186;
+  /* box-shadow: 0 2px 5px 0 rgba(0, 50, 143, 0.26); */
 }

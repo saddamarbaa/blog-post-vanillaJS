@@ -1,14 +1,48 @@
-.page__footer {
-  background-color: #333;
-  color: #fff;
+/*======  Main Section  ======*/
+
+.navigation__button {
+  color: #3e3e3e;
+  border: 1px solid #3e3e3e;
+  padding: 10px 16px;
+  border-radius: 8px;
 }
 
-.page__footer a {
+.navigation__button a {
   text-decoration: none;
-  color: #fff;
+  color: #3e3e3e;
+  cursor: pointer;
 }
 
-.page__footer a:hover {
-  text-decoration: underline;
-  cursor: pointer;
+.navigation__button:hover {
+  color: #004186;
+  border: 2px solid #004186;
+}
+
+.navigation__button:hover a {
+  color: #004186;
+}
+
+#individual__post--date {
+  border-top: 1px solid #f1f4f8;
+  border-bottom: 1px solid #f1f4f8;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  color: #adb5bd;
+}
+
+#individual__post--title {
+  text-align: center;
+  color: var(--drak33Grey);
+  font-size: 1.5em;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+#individual__post--content {
+  line-height: 1.6;
+  color: #495057;
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
