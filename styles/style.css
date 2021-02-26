@@ -7,11 +7,14 @@
 
 :root {
   --white: #fff;
+  --lightWhite: #f1f4f8;
   --red: #f00;
   --primary: #666;
   --drak33Grey: #333;
+  --drak3eGrey: #3e3e3e;
   --margin-top: 2rem;
   --margin-bottom: 2rem;
+  --deepGreen: #004186;
 }
 
 * {
@@ -189,7 +192,6 @@ body {
 .page__footer a:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: #004186;
   color: #929eaa;
 }
 
@@ -205,11 +207,11 @@ body {
 }
 
 .page .fas.fa-plus-circle {
-  color: #3e3e3e;
+  color: var(--drak3eGrey);
   transition: all 0.25s ease;
 }
 
 .page .fas.fa-plus-circle:hover {
-  color: #004186;
+  color: var(--deepGreen);
   /* box-shadow: 0 2px 5px 0 rgba(0, 50, 143, 0.26); */
 }

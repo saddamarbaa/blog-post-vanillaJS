@@ -1,30 +1,30 @@
 /*======  Main Section  ======*/
 
 .navigation__button {
-  color: #3e3e3e;
-  border: 1px solid #3e3e3e;
+  color: var(--drak3eGrey);
+  border: 1px solid var(--drak3eGrey);
   padding: 10px 16px;
   border-radius: 8px;
 }
 
 .navigation__button a {
   text-decoration: none;
-  color: #3e3e3e;
+  color: var(--drak3eGrey);
   cursor: pointer;
 }
 
 .navigation__button:hover {
-  color: #004186;
-  border: 2px solid #004186;
+  color: var(--deepGreen);
+  border: 2px solid var(--deepGreen);
 }
 
 .navigation__button:hover a {
-  color: #004186;
+  color: var(--deepGreen);
 }
 
 #individual__post--date {
-  border-top: 1px solid #f1f4f8;
-  border-bottom: 1px solid #f1f4f8;
+  border-top: 1px solid var(--lightWhite);
+  border-bottom: 1px solid var(--lightWhite);
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 16px;
