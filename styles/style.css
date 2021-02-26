@@ -23,6 +23,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+  background-color: #ffffff;
 }
 
 /*======  Start The Header Section  ======*/
@@ -94,10 +96,16 @@ body {
   display: flex;
   border: 1px solid #eaecee;
   border-radius: 8px;
-  min-height: 200px;
+  min-height: 216px;
   justify-content: space-between;
   margin-top: 1em;
   overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.page__main .main__container--post:hover {
+  transform: translate3d(0, -5px, 0);
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .page__main .main__container--post__image {
@@ -125,7 +133,7 @@ body {
 
 .page__main .post--title {
   color: var(--drak33Grey);
-  font-size: 1.17em;
+  font-size: 1.5em;
   margin-top: 1em;
   font-weight: bold;
 }
@@ -134,19 +142,20 @@ body {
   margin-top: 0.9em;
   margin-bottom: 0.9em;
   color: #495057;
-  line-height: 1.5;
-  max-height: 75px;
+  line-height: 1.6;
+  max-height: 85px;
   overflow: hidden;
 }
 
-.page__main .post--readmore {
+.page__main .post--readmore-button {
   border: 2px solid #3e3e3e;
   width: 135px;
   text-align: center;
   padding: 10px;
+  font-weight: bold;
   background-color: transparent;
 }
-.page__main .post--readmore a {
+.page__main .post--readmore-button a {
   text-decoration: none;
   color: #3e3e3e;
   padding: 1rem 0;
