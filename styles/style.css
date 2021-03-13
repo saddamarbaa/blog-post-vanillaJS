@@ -172,7 +172,7 @@ p {
 .page__footer {
   min-height: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--drak33Grey);
   color: var(--white);
@@ -193,6 +193,34 @@ p {
   text-decoration: underline;
   cursor: pointer;
   color: #929eaa;
+}
+
+.page__footer .footer__socialMedia {
+  display: flex;
+}
+
+.page__footer .footer__socialMedia a {
+  margin: 8px;
+}
+
+.page__footer .footer__socialMedia .facebook:hover {
+  color: #3b5998;
+}
+
+.page__footer .footer__socialMedia .twitter:hover {
+  color: #1da1f2;
+}
+
+.page__footer .footer__socialMedia .instagram:hover {
+  color: #405de6;
+}
+
+.page__footer .footer__socialMedia .github:hover {
+  color: #ffd33d;
+}
+
+.page__footer .footer__socialMedia .linkedin:hover {
+  color: #2867b2;
 }
 
 /*====== new post Icon  ======*/
