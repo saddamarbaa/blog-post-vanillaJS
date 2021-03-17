@@ -4,6 +4,16 @@
  * @format
  */
 
+.page__header::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
 .navigation__button {
 	color: var(--drak3eGrey);
 	border: 1px solid var(--drak3eGrey);
