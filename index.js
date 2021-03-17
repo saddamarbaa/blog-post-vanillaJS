@@ -1,7 +1,7 @@
 /** @format */
 
-const API_URL = 'http://localhost:3000/api/posts/';
-const API_BASE_URL = 'http://localhost:3000';
+const API_URL = "http://localhost:3000/api/posts/";
+const API_BASE_URL = "http://localhost:3000";
 
 // Call function whe the page is loaded
 window.onload = () => {
@@ -12,21 +12,21 @@ window.onload = () => {
 const getPosts = () => {
 	// GET request using fetch()
 	fetch(API_URL, {
-		method: 'GET',
+		method: "GET",
 	})
 		.then((response) => {
 			if (response.ok) {
 				return response.json();
 			} else {
 				// throw new Error(response.statusText);
-				throw new Error('Something went wrong');
+				throw new Error("Something went wrong");
 			}
 		})
 		.then((data) => {
 			buildPosts(data);
 		})
 		.catch((error) => {
-			console.log('Fetch Error :-S', error);
+			console.log("Fetch Error :-S", error);
 		});
 };
 
@@ -35,34 +35,34 @@ const getPosts = () => {
  *  @param {posts} posts Object
  */
 const buildPosts = (posts) => {
-	let blogPostContent = document.querySelector('#blogPostContent');
+	let blogPostContent = document.querySelector("#blogPostContent");
 	posts.forEach((post) => {
 		const { id, title, content, post_image, added_date } = post;
 		let image = `${API_BASE_URL}/static/${post_image}`;
+		const postDtae = new Date(parseInt(added_date)).toDateString();
 
 		blogPostContent.innerHTML += `
     <a href="post.html?id=${id}" id="individualPost">
 				<div class="main__container--post">
-        <!-- blog_post_image -->
-								<div class="main__container--post__image" 
-							  	style="background-image: url(${image});">
-        </div>
+					<!-- blog_post_image -->
+									<div class="main__container--post__image" 
+										style="background-image: url(${image});">
+					</div>
 
-								<div class="main__container--post__content">
-								<!-- blog_post_date -->
-								<div class="post--date">${added_date}</div>
+					<div class="main__container--post__content">
+						<!-- blog_post_date -->
+						<div class="post--date">${postDtae}</div>
 
-								<!-- blog_post_header -->
-								<div class="post--title">${title}</div>
+						<!-- blog_post_header -->
+						<div class="post--title">${title}</div>
 
-								<!-- blog_post_content -->
-								<div class="post--text">
-										<p> ${content}</p>
-								</div>
+						<!-- blog_post_content -->
+						<div class="post--text">
+								<p> ${content}</p>
 						</div>
-				</div>
-
-        </a>
-				`;
+			     	</div>
+		    </div>
+		</a>
+		`;
 	});
 };
