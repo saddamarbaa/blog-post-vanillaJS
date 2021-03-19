@@ -48,7 +48,7 @@ a#individualPost {
 	justify-content: center;
 	min-height: 350px;
 	color: var(--white);
-	background: url('../assets/banner.jpeg') no-repeat center center/cover;
+	background: url("../assets/banner.jpeg") no-repeat center center/cover;
 	position: relative;
 }
 
@@ -57,7 +57,7 @@ a#individualPost {
 	height: 150px;
 	background: var(--white);
 	border-radius: 50%;
-	background: url('../assets/profile2.jpg') no-repeat center center/cover;
+	background: url("../assets/profile2.jpg") no-repeat center center/cover;
 }
 
 .page__header .profile__name {
@@ -71,7 +71,7 @@ a#individualPost {
 
 .page__header::before {
 	position: absolute;
-	content: '';
+	content: "";
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -220,6 +220,7 @@ a#individualPost {
 .page .add-post {
 	position: fixed;
 	bottom: 30px;
+	bottom: 100px;
 	right: 30px;
 	font-size: 24px;
 	width: 50px;

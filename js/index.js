@@ -39,6 +39,7 @@ const buildPosts = (posts) => {
 	posts.forEach((post) => {
 		const { id, title, content, post_image, added_date } = post;
 		let image = `${API_BASE_URL}/static/${post_image}`;
+		console.log(image);
 		const postDtae = new Date(parseInt(added_date)).toDateString();
 
 		blogPostContent.innerHTML += `
