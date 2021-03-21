@@ -1,6 +1,9 @@
 # Blog Post
 Building My Own Blog Post With JavaScript and NodeJS Express,and Multer, CSS Flexbox, RESTful API 
 
+
+## <a href="https://github.com/saddamarbaa/my-blog-api">link to the My Blog API REPO </a>
+
 ### My Blog Software Requirements
 https://docs.google.com/document/d/1lZvacY90Yo19QcnJxRJyy1AAZkTi0Vi5qXHTtptqAiU/edit#heading=h.o5cllxjlz2l1
 
@@ -11,14 +14,12 @@ https://app.diagrams.net/#G1DYvf-0FWMjC2nDzFbvAgbJ03Zg8DLfRZ
 https://app.diagrams.net/#G1Wo8rd6DVJUyCwp7aC6kLpvMkBM3Mgh8l
 
 
-
 ### <a href="">LIVE DEMO #TODO</a>
+
  
 ### <a href="https://www.loom.com/share/23484b8752184488857fe986326fffea">LIVE DEMO Vedio #TODO</a>
  
-
-## responsive on large screens(Home Page)
-
+ 
 
 ## responsive on large screens(Home Page)
 
@@ -31,19 +32,27 @@ https://app.diagrams.net/#G1Wo8rd6DVJUyCwp7aC6kLpvMkBM3Mgh8l
 
 
 
+## (new post page)
+
+![image](https://user-images.githubusercontent.com/51326421/111890191-c17de180-8a19-11eb-9ddf-08f49166a7ef.png)
+
 
 ## responsive on small mobile screens (Home Page)
+
 ![image](https://user-images.githubusercontent.com/51326421/111890048-a199ee00-8a18-11eb-9473-4ad3854f1516.png)
 
 
-## (About Page)
-
-![image](https://user-images.githubusercontent.com/51326421/104224984-55f72100-5478-11eb-96d9-da9e8252b6cc.png)
+## (post page)
 
 ![image](https://user-images.githubusercontent.com/51326421/111890141-53391f00-8a19-11eb-821d-a83a60b23b6c.png)
 
 
 
+## (new post page)
+
+![image](https://user-images.githubusercontent.com/51326421/111890234-233e4b80-8a1a-11eb-987f-716c9aebee8d.png)
+
+
 ## TODO
-the project is on progress as am still learning Bootstrap 5 alpha Framework
+the project is on progress 
 
