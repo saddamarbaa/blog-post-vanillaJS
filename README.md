@@ -7,8 +7,25 @@ Building My Own Blog Post With JavaScript and NodeJS Express,and Multer, CSS Fle
 ### My Blog Software Requirements
 https://docs.google.com/document/d/1lZvacY90Yo19QcnJxRJyy1AAZkTi0Vi5qXHTtptqAiU/edit#heading=h.o5cllxjlz2l1
 
+![image](https://user-images.githubusercontent.com/51326421/111891042-f857f580-8a21-11eb-8bb9-310f0c666f91.png)
+
+### Business Requirements
+
+![image](https://user-images.githubusercontent.com/51326421/111891112-b4192500-8a22-11eb-92e9-20854d336b57.png)
+
+
+
+### Technical Requirements
+
+![image](https://user-images.githubusercontent.com/51326421/111891149-33a6f400-8a23-11eb-9f98-bea822a938f3.png)
+
+
+
 ### My Blog SUser Flow
 https://app.diagrams.net/#G1DYvf-0FWMjC2nDzFbvAgbJ03Zg8DLfRZ
+
+![image](https://user-images.githubusercontent.com/51326421/111890990-5b955800-8a21-11eb-89db-3f552bd8f7ff.png)
+
 
 ### Blog App: Wireframe
 https://app.diagrams.net/#G1Wo8rd6DVJUyCwp7aC6kLpvMkBM3Mgh8l
