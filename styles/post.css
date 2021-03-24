@@ -14,26 +14,23 @@
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
-.navigation__button {
+.navigation {
+	margin-bottom: 1rem;
+}
+
+.navigation a {
+	text-decoration: none;
 	color: var(--drak3eGrey);
 	border: 1px solid var(--drak3eGrey);
 	padding: 10px 16px;
 	border-radius: 8px;
-}
-
-.navigation__button a {
-	text-decoration: none;
-	color: var(--drak3eGrey);
 	cursor: pointer;
+	transition: all 0.2s ease-in-out;
 }
 
-.navigation__button:hover {
+.navigation a:hover {
 	color: var(--deepGreen);
 	border: 2px solid var(--deepGreen);
-}
-
-.navigation__button:hover a {
-	color: var(--deepGreen);
 }
 
 #individual__post--date {
