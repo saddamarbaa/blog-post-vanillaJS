@@ -19,9 +19,13 @@
 	--margin-top: 2rem;
 	--margin-bottom: 2rem;
 	--deepGreen: #004186;
+	--space16: 16px;
+	--space20: 20px;
+	--space25: 25px;
+	--space30: 30px;
+	--space40: 40px;
 	--space50: 50%;
 	--space60: 60px;
-	--space20: 20px;
 	--line-height-space: 1.7;
 }
 
