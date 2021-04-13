@@ -289,6 +289,10 @@ a#individualPost {
 	.page__main .main__container--post:hover {
 		transform: translate3d(0, -5px, 0);
 		box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.1);
+		-webkit-transform: translate3d(0, -5px, 0);
+		-moz-transform: translate3d(0, -5px, 0);
+		-ms-transform: translate3d(0, -5px, 0);
+		-o-transform: translate3d(0, -5px, 0);
 	}
 
 	.page__main .main__container--post__image {
@@ -312,4 +316,36 @@ a#individualPost {
 		display: flex;
 		justify-content: space-between;
 	}
+}
+
+/* login out buton */
+.sign-in-login {
+	margin-right: 5px;
+	position: absolute;
+	top: 5px;
+	right: 5px !important;
+	color: var(--white);
+	padding: var(--space16);
+	cursor: pointer;
+	width: max-content;
+	z-index: 110;
+	background-color: transparent;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+	border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+}
+
+.sign-in-login:hover {
+	background-color: var(--deepGreen);
+}
+
+.fa-sign-in-alt {
+	margin-right: 5px;
 }

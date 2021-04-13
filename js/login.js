@@ -62,12 +62,16 @@ const loginfetch = (payload) => {
 			// Displaying results to console
 			console.log(data);
 			// console.log(data.token);
+
 			// save the token in the localStorage
-			// localStorage.setItem("token", data.token);
-			// location.href = "/";
+			localStorage.setItem("token", data.token);
+
+			// redirect user to the home page
+			location.href = "/";
 		})
 		.catch((error) => {
-			alert(1);
+			// redirect user to the register page
+
 			console.log("Fetch Error :-S", error);
 		});
 };

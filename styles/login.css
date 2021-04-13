@@ -11,7 +11,7 @@
 	justify-content: center;
 	align-content: center;
 	font-size: var(--space20);
-	margin-bottom: var(--space20);
+	padding-bottom: var(--space20);
 }
 
 .login .login-wraper {
@@ -93,6 +93,7 @@
 	display: grid;
 }
 
+.login-inner-wraper input[type="submit"],
 .login-inner-wraper input[type="button"],
 .login-inner-wraper input[type="reset"] {
 	background-color: var(--drak33Grey);
@@ -102,6 +103,7 @@
 	cursor: pointer;
 }
 
+.login-inner-wraper input[type="submit"]:hover,
 .login-inner-wraper input[type="button"]:hover,
 .login-inner-wraper input[type="reset"]:hover {
 	background-color: var(--deepGreen);

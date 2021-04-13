@@ -72,3 +72,13 @@ const buildPosts = (posts) => {
 		`;
 	});
 };
+
+
+// Clear Local Storage
+const deleteTokenFromlocalStorage = document.getElementById(
+	"removeTokenButton",
+);
+
+deleteTokenFromlocalStorage.addEventListener("click", () => {
+	localStorage.removeItem("token");
+});
