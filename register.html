@@ -36,7 +36,9 @@
 		<link rel="stylesheet" href="./styles/login.css" />
 
 		<!-- register css file  -->
-		<link rel="stylesheet" href="./styles" />
+		<link rel="stylesheet" href="./styles/register.css" />
+		<!-- load this one directly -->
+		<script src="./js/sessions.js"></script>
 
 		<!-- Main Js file  -->
 		<script src="./js/register.js" defer></script>
@@ -47,9 +49,9 @@
 	<body>
 		<div class="login">
 			<div class="container">
-				<div class="login-wraper">
+				<div class="login-wraper register-wraper">
 					<form
-						id="loginForm"
+						id="registerForm"
 						class="login-inner-wraper"
 						name="loginform"
 						autocomplete="of"
@@ -97,6 +99,7 @@
 						</div>
 						<div class="buttons">
 							<input type="submit" value="Register" />
+							<input type="reset" value="Reset" />
 						</div>
 					</form>
 				</div>

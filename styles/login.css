@@ -20,7 +20,7 @@
 	justify-content: center;
 	align-content: center;
 	grid-template-columns: 400px;
-	grid-template-rows: 520px;
+	grid-template-rows: auto;
 }
 
 @media (max-width: 380px) {
@@ -58,6 +58,7 @@
 	margin-top: var(--space20);
 }
 
+.login-inner-wraper input#registered,
 .login-inner-wraper input[type="text"],
 .login-inner-wraper input[type="password"],
 .login-inner-wraper input[type="email"] {
@@ -87,6 +88,14 @@
 	-moz-border-radius: 0.25rem;
 	-ms-border-radius: 0.25rem;
 	-o-border-radius: 0.25rem;
+	font-weight: bold;
+}
+
+.login-inner-wraper input#registered {
+	background-color: red;
+	color: white;
+	cursor: default;
+	display: none;
 }
 
 .login-inner-wraper .buttons {

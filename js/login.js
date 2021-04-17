@@ -30,7 +30,7 @@ loginForm.addEventListener("submit", (event) => {
 
 const loginfetch = (payload) => {
 	// POST request using fetch()
-	fetch(API_URL + "/api/posts/login", {
+	fetch(API_URL + "/api/login", {
 		/**
 		 * The default method for a request with fetch is GET,
 		 * so we must tell it to use the POST HTTP method.
@@ -57,11 +57,11 @@ const loginfetch = (payload) => {
 				// throw new Error(response.statusText);
 				throw new Error("Something went wrong");
 			}
-		}) // returns a promise allready
+		}) // returns a promise already
 		.then((data) => {
 			// Displaying results to console
 			console.log(data);
-			// console.log(data.token);
+			console.log(data.token);
 
 			// save the token in the localStorage
 			localStorage.setItem("token", data.token);
@@ -75,3 +75,6 @@ const loginfetch = (payload) => {
 			console.log("Fetch Error :-S", error);
 		});
 };
+
+// redirect user to the register page
+const redirectToRegisterPage = () => (location.href = "/register.html");

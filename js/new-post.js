@@ -1,9 +1,19 @@
 /** @format */
 
-const API_URL = "http://localhost:3000/api/posts/";
+// Selectors
+const API_URL = "http://localhost:3000/api/addPost";
+const newPostForm = document.getElementById("newPostForm");
 
-const submitNewPost = () => {
-	let formData = new FormData();
+// EventListeners
+newPostForm.addEventListener("submit", (event) => {
+	/**
+	 * This prevents the default behaviour of the browser submitting
+	 * the form so that we can handle things instead.
+	 */
+	event.preventDefault();
+
+	// Build FormData
+	let formData = new FormData(); // Currently empty
 	const title = document.getElementById("form-post-title").value;
 	const content = document.getElementById("form-post-content").value;
 	const fileInputElement = document.getElementById("form-post-image");
@@ -11,6 +21,12 @@ const submitNewPost = () => {
 	formData.append("title", title);
 	formData.append("content", content);
 
+	// Call submitNewPost() function
+	submitNewPost(formData);
+});
+
+// Functions
+const submitNewPost = (formData) => {
 	// POST request using fetch()
 	fetch(API_URL, {
 		method: "POST",

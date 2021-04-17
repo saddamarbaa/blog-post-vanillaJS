@@ -9,39 +9,56 @@
  */
 
 const currentToken = localStorage.getItem("token");
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const existingEmail = urlParams.get("existingEmail");
+const registeredEmail = urlParams.get("registered");
 
-// check if the user is already login
-const checkIfLoggedIn = () => {
-	const params = new URLSearchParams(window.location.search);
-	const isTrue = location.href.indexOf("login.html") > -1;
+window.onload = () => {
+	const loginForm = document.getElementById("loginForm");
+	const emailInput = loginForm.email;
 
-	if (currentToken) {
-		// redirect user to the home page
-		if (isTrue) {
-			location.href = "/";
-		}
-		// If I am currently not logged in
-		// And trying to access a unauthorized page
-		// (Trying to access all other pages besides login)
-	} else if (isTrue === false) {
-		location.href = "login.html";
+	if (existingEmail) {
+		emailInput.value = existingEmail;
+		emailInput.style.backgroundColor = "#004186";
+		emailInput.style.fontSize = "20px";
+		emailInput.style.color = "white";
+		emailInput.style.transition = "0.5s";
+	}
+	if (registeredEmail) {
+		const newRegisterEmailInput = loginForm.registered;
+		newRegisterEmailInput.style.display ="block"
 	}
 };
 
-// check if the user is allready login
-// const checklocalStorageIfUserLogIn = () => {
-// 	const currentToken = localStorage.getItem("token");
-// 	const params = new URLSearchParams(window.location.search);
-// 	const flag = params.has("login");
+// check if the user is already login
+const checkIfLoggedIn = () => {
+	const currentToken = localStorage.getItem("token");
+	if (currentToken) {
+		if (
+			location.href.includes("/login.html") ||
+			location.href.includes("/register.html")
+		) {
+			location.href = "/";
+		}
+	} else if (!currentToken) {
+		// If I am currently not logged in
+		// And trying to access a unauthorized page
+		// (Trying to access all pages besides login)
+		if (
+			!location.href.includes("/login.html") &&
+			!location.href.includes("/register.html")
+		) {
+			location.href = "/login.html";
+		}
+	}
+};
 
 // first remove the token from localStorage
 // and then redirect user to go lgoin page for sigin in
-window.onload = () => {
-	const removeTokenButton = document.getElementById("removeTokenButton");
-	removeTokenButton.addEventListener(onclick, () => {
-		localStorage.removeItem("token");
-		location.href = "login.html";
-	});
+const LogOut = () => {
+	localStorage.removeItem("token");
+	location.href = "login.html";
 };
 
 // function call

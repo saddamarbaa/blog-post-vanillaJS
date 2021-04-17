@@ -1,18 +1,17 @@
 /** @format */
 
-// Selecters
+// Selectors
 
 // The API URL
 const API_URL = "http://localhost:3000";
 
-const loginForm = document.getElementById("loginForm");
-// console.log(loginForm);
+const registerForm = document.getElementById("registerForm");
 
 /**
  * Event handler for a form  on submit event.
  * @param {SubmitEvent} event
  */
-loginForm.addEventListener("submit", (event) => {
+registerForm.addEventListener("submit", (event) => {
 	/**
 	 * This prevents the default behaviour of the browser submitting
 	 * the form so that we can handle things instead.
@@ -20,7 +19,7 @@ loginForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 
 	// User input payload(user information)
-	const user = document.loginform;
+	const user = document.getElementById("registerForm");
 	const payload = {
 		firstName: user.firstName.value,
 		lastName: user.lastName.value,
@@ -28,14 +27,13 @@ loginForm.addEventListener("submit", (event) => {
 		password: user.password.value,
 	};
 
-	console.log(payload);
-	// call registerfetch() function
-	registerfetch(payload);
+	// call registerUser() function
+	registerUser(payload);
 });
 
-const registerfetch = (payload) => {
+const registerUser = (payload) => {
 	// POST request using fetch()
-	fetch(API_URL + "/api/posts/register", {
+	fetch(API_URL + "/api/register", {
 		/**
 		 * The default method for a request with fetch is GET,
 		 * so we must tell it to use the POST HTTP method.
@@ -62,19 +60,18 @@ const registerfetch = (payload) => {
 				// throw new Error(response.statusText);
 				throw new Error("Something went wrong");
 			}
-		}) // returns a promise allready
+		}) // returns a promise already
 		.then((data) => {
 			// Displaying results to console
 			console.log(data);
-			// console.log(data.token);
-			// save the token in the localStorage
-			// localStorage.setItem("token", data.token);
 
 			// redirect user to the login page
-			location.href = "login.html";
+			location.href = `/login.html?existingEmail=${payload.email}&registered=true`;
 		})
 		.catch((error) => {
-			alert("allread register");
-			console.log("Fetch Error :-S", error);
+			alert("already register");
+			// redirect user to the login page
+			location.href = `/login.html?existingEmail=${payload.email}`;
+			// console.log("Fetch Error :-S", error);
 		});
 };
